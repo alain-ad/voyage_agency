@@ -1,6 +1,8 @@
 // src/components/Auth.js
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import '../styles/components.css';
+
 
 const Auth = ({ onClose }) => {
   const { login } = useAuth();
@@ -39,7 +41,6 @@ const Auth = ({ onClose }) => {
         />
         <button type="submit">Se connecter</button>
       </form>
-      <button onClick={onClose}>Annuler</button>
     </div>
   );
 };

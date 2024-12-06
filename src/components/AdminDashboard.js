@@ -17,7 +17,7 @@ const AdminDashboard = () => {
   const handleAddAgency = () => {
     if (editAgencyIndex !== null) {
       const updatedAgencies = agencies.map((agency, index) =>
-        index === editAgencyIndex ? newAgency : agency
+        index === editAgencyIndex ? { ...newAgency, id: agency.id } : agency
       );
       setAgencies(updatedAgencies);
       setEditAgencyIndex(null);

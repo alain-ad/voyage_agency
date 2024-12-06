@@ -367,3 +367,67 @@
   .filters button:hover {
     background-color: #0056b3;
   }
+
+  /* src/styles/Auth.css */
+
+.auth {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth button:hover {
+  background-color: #0056b3;
+}
+
+.auth .error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.auth button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.auth button:last-of-type {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.auth button:last-of-type:hover {
+  background-color: #007bff;
+  color: white;
+}
