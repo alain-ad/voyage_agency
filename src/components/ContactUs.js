@@ -23,7 +23,7 @@ const ContactUs = () => {
   return (
     <div className="contact-us">
       <h2>Nous Contacter</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="contact-form">
         <label>
           Nom:
           <input 
@@ -32,6 +32,7 @@ const ContactUs = () => {
             value={formData.name} 
             onChange={handleChange} 
             required 
+            className="contact-input"
           />
         </label>
         <label>
@@ -42,6 +43,7 @@ const ContactUs = () => {
             value={formData.email} 
             onChange={handleChange} 
             required 
+            className="contact-input"
           />
         </label>
         <label>
@@ -51,9 +53,10 @@ const ContactUs = () => {
             value={formData.message} 
             onChange={handleChange} 
             required 
+            className="contact-textarea"
           />
         </label>
-        <button type="submit">Envoyer</button>
+        <button type="submit" className="contact-button">Envoyer</button>
       </form>
     </div>
   );

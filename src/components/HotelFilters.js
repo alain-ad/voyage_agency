@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/components.css'; // Assurez-vous que le fichier CSS est correctement importé
 
 const HotelFilters = ({ onFilterChange }) => {
   return (
     <div className="filters">
       <h3>Filtrer par étoiles</h3>
-      <select onChange={(e) => onFilterChange('stars', e.target.value)}>
+      <select onChange={(e) => onFilterChange('stars', e.target.value)} className="filter-select">
         <option value="">Tous</option>
         <option value="1">1 étoile</option>
         <option value="2">2 étoiles</option>
@@ -18,6 +19,7 @@ const HotelFilters = ({ onFilterChange }) => {
         type="number"
         placeholder="Prix maximum"
         onChange={(e) => onFilterChange('price', e.target.value)}
+        className="filter-input"
       />
     </div>
   );
